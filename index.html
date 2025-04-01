@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Royal Feast - Canteen Menu</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>The Royal Feast</h1>
+        <p>Welcome to the best canteen!</p>
+        <p class="opening-times">Open: 8:00 AM - 4:00 PM</p>
+    </header>
+
+    <div class="menu-buttons">
+        <button onclick="filterMenu('all')">All Menu</button>
+        <button onclick="filterMenu('main')">Main Courses</button>
+        <button onclick="filterMenu('side')">Sides</button>
+        <button onclick="filterMenu('drinks')">Drinks</button>
+        <button onclick="filterMenu('desserts')">Desserts</button>
+        <button onclick="filterMenu('pizza')">Pizza</button>
+    </div>
+
+    <div id="menu" class="menu"></div>
+
+    <!-- Cart Button -->
+    <button id="cart-button" class="cart-button">🛒</button>
+
+    <!-- Cart View -->
+    <div id="cart" class="cart">
+        <h3>Cart</h3>
+        <ul id="cart-list"></ul>
+        <p id="total-price">Total: 0 MZN</p>
+        <button onclick="clearCart()">Clear Cart</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
